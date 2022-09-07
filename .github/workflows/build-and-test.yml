@@ -17,16 +17,16 @@ jobs:
           - [gcc, g++]
           - [clang, clang++]
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install clang -y \
-        sudo apt-get install doxygen -y
+#    - name: Install Dependencies
+#      run: |
+#        sudo apt-get update
+#        sudo apt-get install clang -y \
+#        sudo apt-get install doxygen -y
 
     - name: Configure
       run: |
@@ -44,15 +44,15 @@ jobs:
       run: ctest -C ${{ env.BUILD_TYPE }}
 
   codecov:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install doxygen -y
+#      - name: Install Dependencies
+#        run: |
+#          sudo apt-get update
+#          sudo apt-get install doxygen -y
 
       - name: Configure
         run: |
