@@ -19,6 +19,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
+        sudo apt update
         sudo apt-get install clang -y \
         sudo apt-get install doxygen -y
 
@@ -45,6 +46,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          sudo apt update
           sudo apt-get install doxygen -y
 
       - name: Configure
