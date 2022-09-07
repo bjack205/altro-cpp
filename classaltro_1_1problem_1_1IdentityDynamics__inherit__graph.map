@@ -1,0 +1,5 @@
+<map id="altro::problem::IdentityDynamics" name="altro::problem::IdentityDynamics">
+<area shape="rect" id="node1" title="Dummy discrete dynamics that don&#39;t do anything." alt="" coords="7,169,179,211"/>
+<area shape="rect" id="node2" href="$classaltro_1_1problem_1_1DiscreteDynamics.html" title="Represents a discrete dynamics function of the form: ." alt="" coords="5,80,181,121"/>
+<area shape="rect" id="node3" href="$classaltro_1_1FunctionBase.html" title="Represents a generic vector&#45;valued function of the form." alt="" coords="20,5,167,32"/>
+</map>

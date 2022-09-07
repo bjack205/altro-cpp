@@ -1,0 +1,5 @@
+<map id="altro::ThreadPool" name="altro::ThreadPool">
+<area shape="rect" id="node1" title="Basic threadpool that uses a single work queue." alt="" coords="27,228,160,255"/>
+<area shape="rect" id="node2" href="$classaltro_1_1ThreadSafeQueue.html" title=" " alt="" coords="5,109,181,165"/>
+<area shape="rect" id="node3" href="$structaltro_1_1ThreadSafeQueue_1_1Node.html" title=" " alt="" coords="5,5,181,47"/>
+</map>

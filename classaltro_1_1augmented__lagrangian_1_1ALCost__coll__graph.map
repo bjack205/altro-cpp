@@ -1,0 +1,6 @@
+<map id="altro::augmented_lagrangian::ALCost&lt; n, m &gt;" name="altro::augmented_lagrangian::ALCost&lt; n, m &gt;">
+<area shape="rect" id="node1" title="An augmented Lagrangian cost function, which adds the linear and quadratic penalty costs to an existi..." alt="" coords="5,229,216,271"/>
+<area shape="rect" id="node2" href="$classaltro_1_1problem_1_1CostFunction.html" title="Represents a scalar&#45;valued cost function." alt="" coords="7,155,214,181"/>
+<area shape="rect" id="node3" href="$classaltro_1_1ScalarFunction.html" title="Represents an abstract scalar&#45;valued function." alt="" coords="33,80,188,107"/>
+<area shape="rect" id="node4" href="$classaltro_1_1FunctionBase.html" title="Represents a generic vector&#45;valued function of the form." alt="" coords="37,5,184,32"/>
+</map>

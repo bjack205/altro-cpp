@@ -1,0 +1,5 @@
+<map id="altro::SolverStats" name="altro::SolverStats">
+<area shape="rect" id="node1" title="Holds statistics recorded during the solve." alt="" coords="99,95,233,121"/>
+<area shape="rect" id="node2" href="$structaltro_1_1SolverOptions.html" title="Options for augmented Lagrangian and iLQR solvers." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node3" href="$classaltro_1_1SolverLogger.html" title="Provides a tabular&#45;like logging output." alt="" coords="180,5,325,32"/>
+</map>

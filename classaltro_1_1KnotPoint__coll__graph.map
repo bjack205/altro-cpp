@@ -1,0 +1,4 @@
+<map id="altro::KnotPoint&lt; n, m, T &gt;" name="altro::KnotPoint&lt; n, m, T &gt;">
+<area shape="rect" id="node1" title="Stores the state, control, time, and time step for a single knot point." alt="" coords="18,95,169,136"/>
+<area shape="rect" id="node2" href="$classaltro_1_1StateControlSized.html" title="A super class that stores the state and control dimension." alt="" coords="5,5,181,47"/>
+</map>

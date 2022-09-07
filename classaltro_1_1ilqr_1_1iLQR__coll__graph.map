@@ -1,0 +1,9 @@
+<map id="altro::ilqr::iLQR&lt; n, m &gt;" name="altro::ilqr::iLQR&lt; n, m &gt;">
+<area shape="rect" id="node1" title="Solve an unconstrained trajectory optimization problem using iterative LQR." alt="" coords="767,78,897,119"/>
+<area shape="rect" id="node2" href="$classaltro_1_1SolverStats.html" title="Holds statistics recorded during the solve." alt="" coords="540,56,675,83"/>
+<area shape="rect" id="node3" href="$structaltro_1_1SolverOptions.html" title="Options for augmented Lagrangian and iLQR solvers." alt="" coords="275,5,426,32"/>
+<area shape="rect" id="node4" href="$classaltro_1_1SolverLogger.html" title="Provides a tabular&#45;like logging output." alt="" coords="278,56,423,83"/>
+<area shape="rect" id="node5" href="$classaltro_1_1ThreadPool.html" title="Basic threadpool that uses a single work queue." alt="" coords="541,111,674,137"/>
+<area shape="rect" id="node6" href="$classaltro_1_1ThreadSafeQueue.html" title=" " alt="" coords="263,107,439,163"/>
+<area shape="rect" id="node7" href="$structaltro_1_1ThreadSafeQueue_1_1Node.html" title=" " alt="" coords="5,114,181,155"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="altro::problem::DiscretizedModel&lt; Model, Integrator &gt;" name="altro::problem::DiscretizedModel&lt; Model, Integrator &gt;">
+<area shape="rect" id="node1" title="Discretizes a continuous dynamics model using an explicit integrator." alt="" coords="848,43,1052,84"/>
+<area shape="rect" id="node2" href="$classaltro_1_1problem_1_1DiscreteDynamics.html" title="Represents a discrete dynamics function of the form: ." alt="" coords="533,5,709,47"/>
+<area shape="rect" id="node3" href="$classaltro_1_1FunctionBase.html" title="Represents a generic vector&#45;valued function of the form." alt="" coords="277,13,423,39"/>
+<area shape="rect" id="node4" href="$classaltro_1_1problem_1_1RungeKutta4.html" title=" " alt="" coords="519,71,724,127"/>
+<area shape="rect" id="node5" href="$classaltro_1_1problem_1_1ExplicitIntegrator.html" title="Interface class for explicit integration methods for dynamical systems." alt="" coords="231,79,469,120"/>
+<area shape="rect" id="node6" href="$classaltro_1_1StateControlSized.html" title=" " alt="" coords="5,79,181,120"/>
+</map>

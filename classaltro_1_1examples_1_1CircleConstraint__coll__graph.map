@@ -1,0 +1,5 @@
+<map id="altro::examples::CircleConstraint" name="altro::examples::CircleConstraint">
+<area shape="rect" id="node1" title="Constraint that keeps the position away from a list of different circular regions...." alt="" coords="5,184,241,211"/>
+<area shape="rect" id="node2" href="$classaltro_1_1constraints_1_1Constraint.html" title=" " alt="" coords="31,80,215,136"/>
+<area shape="rect" id="node3" href="$classaltro_1_1FunctionBase.html" title="Represents a generic vector&#45;valued function of the form." alt="" coords="50,5,197,32"/>
+</map>
