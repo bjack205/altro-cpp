@@ -111,7 +111,8 @@ include(GoogleTest)
 ################################################################################
 
 if(ALTRO_BUILD_DOCS)
-  add_subdirectory(docs)
+  message(STATUS "Adding altro_docs target to build documentation.")
+  add_subdirectory(docs EXCLUDE_FROM_ALL)
 endif()
 
 ################################################################################
