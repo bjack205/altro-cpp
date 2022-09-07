@@ -73,7 +73,3 @@ jobs:
           verbose: true
           gcov: true
           gcov_ignore: ${{ github.workspace }}/build/_deps
-#      - name: Process code coverage results
-#        run: gcov **/*.o
-#      - name: Upload Coverage to Codecov
-#        run: bash <(curl -s https://codecov.io/bash) || echo "Codecov did not collect coverage reports."
