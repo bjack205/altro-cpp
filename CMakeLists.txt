@@ -32,6 +32,7 @@ option(ALTRO_BUILD_TESTS "Build the tests" ON)
 option(ALTRO_BUILD_EXAMPLES "Build the examples" ON)
 option(ALTRO_BUILD_COVERAGE "Build test coverage" OFF)
 option(ALTRO_BUILD_BENCHMARKS "Build the benchmark problems" ON)
+option(ALTRO_BUILD_DOCS "Build the altro documentation" OFF)
 option(ALTRO_SET_POSITION_INDEPENDENT "Set the -fPIC option on all targets" ON)
 option(ALTRO_BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
@@ -109,7 +110,9 @@ include(GoogleTest)
 ############################ DOCUMENTATION #####################################
 ################################################################################
 
-add_subdirectory(docs)
+if(ALTRO_BUILD_DOCS)
+  add_subdirectory(docs)
+endif()
 
 ################################################################################
 ############################ CODE COVERAGE #####################################
