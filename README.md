@@ -1,3 +1,6 @@
+[![CMake](https://github.com/bjack205/altro-cpp/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/bjack205/altro-cpp/actions/workflows/build-and-test.yml)
+[![codecov](https://codecov.io/gh/bjack205/altro-cpp/branch/master/graph/badge.svg?token=DXMSQLLM91)](https://codecov.io/gh/bjack205/altro-cpp)
+[![](https://img.shields.io/badge/docs-dev-blue.svg)](https://bjack205.github.io/altro-cpp/)
 
 # AltroCpp
 A non-linear trajectory optimization library developed by [Optimus Ride, Inc.](https://www.optimusride.com/)
