@@ -70,6 +70,7 @@ list(POP_BACK CMAKE_MESSAGE_CONTEXT)
 
 # Add Eigen
 list(APPEND CMAKE_MESSAGE_CONTEXT eigen)
+set(EIGEN_BUILD_DOC OFF CACHE BOOL "Enable creation of Eigen documentation." FORCE)
 set(BUILD_TESTING OFF CACHE BOOL "Enable creation of Eigen tests." FORCE)
 set(EIGEN_BUILD_TESTING OFF CACHE BOOL "Enable creation of Eigen tests." FORCE)
 FetchContent_Declare(eigen
