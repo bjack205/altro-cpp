@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+#ifdef ALTRO_USE_MULTITHREADING
 #include "altro/common/threadpool.hpp"
 #include "perf/benchmarks.hpp"
 #include "perf/task_launcher.hpp"
@@ -54,3 +55,8 @@ void ThreadPoolTiming() {
 int main() {
   altro::benchmarks::ThreadPoolTiming();
 }
+#else
+int main() {
+  fmt::print("ALTRO multithreading is disabled.\n");
+}
+#endif

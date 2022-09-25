@@ -2,7 +2,9 @@
 
 #pragma once
 
+#ifdef ALTRO_USE_MULTITHREADING
 #include <thread>
+#endif
 #include <cmath>
 
 #include "altro/utils/utils.hpp"
@@ -48,7 +50,7 @@ struct SolverOptions {
   bool reset_duals = true;                // NOLINT Reset the dual variables before each solve
   int header_frequency = 10;              // NOLINT Frequency at which the header is printed for AL iterations (for levels < kInner)
   LogLevel verbose = LogLevel::kSilent;   // Output verbosity level
-  bool profiler_enable = false;                  // Enable internal profiler
+  bool profiler_enable = false;           // Enable internal profiler
   bool profiler_output_to_file = false;    // Output to file (true) or stdout (false)
   std::string log_directory;
   std::string profile_filename = "profiler.out";
@@ -56,12 +58,16 @@ struct SolverOptions {
   int tasks_per_thread = 1;
   // clang-format on
 
+#ifdef ALTRO_USE_MULTITHREADING
   int NumThreads() const {
     if (nthreads == kPickHardwareThreads) {
       return std::thread::hardware_concurrency();
     }
     return std::max(nthreads, 1);
   }
+#else
+  int NumThreads() const { return 1; }
+#endif
 };
 
 }  // namespace altro

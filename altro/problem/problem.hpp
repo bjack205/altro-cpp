@@ -281,6 +281,9 @@ class Problem {
     return ineq_;
   }
 
+  int GetNumEqualityConstraints(int k) const { return eq_[k].size(); }
+  int GetNumInequalityConstraints(int k) const { return ineq_[k].size(); }
+
   int NumSegments() const { return N_; }
 
   /**

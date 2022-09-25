@@ -2,12 +2,13 @@
 
 #pragma once
 
-#include <iostream>
-#include <vector>
-#include <memory>
 #include <chrono>
+#include <iostream>
 #include <map>
+#include <memory>
 #include <string>
+#include <vector>
+#include "exceptions.hpp"
 
 namespace altro {
 
@@ -55,7 +56,7 @@ class Timer : public std::enable_shared_from_this<Timer> {
   void Deactivate() { active_ = false; }
   bool IsActive() const { return active_; }
   void SetOutput(FILE* io) { io_ = io; }  // ownership of resource remains with user
-  void SetOutput(const std::string& filename);  // takes ownership of the file resource
+  altro::ErrorCodes SetOutput(const std::string& filename);  // takes ownership of the file resource
   friend Stopwatch;  // so that it can populate times_
 
  private:

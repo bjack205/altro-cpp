@@ -22,8 +22,10 @@ function(export_library lib_name export_name)
   # Install the target and add to the export set
   install(TARGETS ${lib_name}
         EXPORT ${export_name}
+        PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
         LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
         ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
         RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
   )
+  add_library(altrocpp::${lib_name} ALIAS ${lib_name})
 endfunction()

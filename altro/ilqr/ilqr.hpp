@@ -4,14 +4,12 @@
 
 #include <array>
 #include <functional>
-#include <future>
 #include <iostream>
 #include <map>
-#include <thread>
 
+#include "altro/common/threadpool.hpp"
 #include "altro/common/solver_stats.hpp"
 #include "altro/common/state_control_sized.hpp"
-#include "altro/common/threadpool.hpp"
 #include "altro/common/timer.hpp"
 #include "altro/common/trajectory.hpp"
 #include "altro/eigentypes.hpp"

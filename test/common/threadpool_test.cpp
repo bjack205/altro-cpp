@@ -7,7 +7,8 @@
 #include <fmt/chrono.h>
 #include <thread>
 
-#include "altro/common/threadsafe_queue.hpp"
+
+#ifdef ALTRO_USE_MULTITHREADING
 #include "altro/common/threadpool.hpp"
 #include "perf/task_launcher.hpp"
 
@@ -147,5 +148,5 @@ TEST(ThreadPool, StopAndAdd) {
   EXPECT_EQ(launcher.SumCounts(), 2 * N);
 }
 
-
 } // namespace altro
+#endif

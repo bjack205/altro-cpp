@@ -62,7 +62,6 @@ class Trajectory {
     traj_.emplace_back(X[N], 0 * U[N-1], times[N], 0.0);
   }
 
-
   /***************************** Copying **************************************/
   Trajectory(const Trajectory& Z) : traj_(Z.traj_) {}
   Trajectory& operator=(const Trajectory& Z) {

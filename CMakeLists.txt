@@ -35,6 +35,7 @@ option(ALTRO_BUILD_BENCHMARKS "Build the benchmark problems" ON)
 option(ALTRO_BUILD_DOCS "Build the altro documentation" OFF)
 option(ALTRO_SET_POSITION_INDEPENDENT "Set the -fPIC option on all targets" ON)
 option(ALTRO_BUILD_SHARED_LIBS "Build shared libraries" OFF)
+option(ALTRO_USE_MULTITHREADING "Enable multithreading" OFF)
 
 # Handle default build type
 set(ALTRO_DEFAULT_BUILD_TYPE "Release")
@@ -44,7 +45,7 @@ if (NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 
 # Set (and create) log file directory
-set(LOGDIR ${PROJECT_BINARY_DIR}/logs CACHE FILESTRING "Location of log files")
+set(LOGDIR ${PROJECT_BINARY_DIR}/logs CACHE FILEPATH "Location of log files")
 file(MAKE_DIRECTORY ${LOGDIR})
 
 # Examples are required to build the tests
@@ -65,8 +66,13 @@ FetchContent_Declare(fmt
   GIT_REPOSITORY https://github.com/fmtlib/fmt
   GIT_TAG a33701196adfad74917046096bf5a2aa0ab0bb50  # version 9.1.0
 )
+set(FMT_INSTALL ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(fmt)
-export_library(fmt AltroCppTargets)
+target_include_directories(fmt
+  PUBLIC
+  $<BUILD_INTERFACE:${fmt_SOURCE_DIR}/include>
+)
+#export_library(fmt AltroCppTargets)
 list(POP_BACK CMAKE_MESSAGE_CONTEXT)
 
 # Add Eigen
@@ -74,6 +80,7 @@ list(APPEND CMAKE_MESSAGE_CONTEXT eigen)
 set(EIGEN_BUILD_DOC OFF CACHE BOOL "Enable creation of Eigen documentation." FORCE)
 set(BUILD_TESTING OFF CACHE BOOL "Enable creation of Eigen tests." FORCE)
 set(EIGEN_BUILD_TESTING OFF CACHE BOOL "Enable creation of Eigen tests." FORCE)
+set(EIGEN_BUILD_BTL OFF CACHE BOOL "Eigen Benchmark suite" FORCE)
 FetchContent_Declare(eigen
   GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
   GIT_TAG 3147391d946bb4b6c68edd901f2add6ac1f31f8c  # version 3.4.0
@@ -147,6 +154,10 @@ endif()
 ############################# BUILD STEPS ######################################
 ################################################################################
 
+if (ALTRO_USE_MULTITHREADING)
+  add_compile_definitions("ALTRO_USE_MULTITHREADING")
+endif()
+
 # Output all binaries to a single folder
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
@@ -188,7 +199,7 @@ endif()
 # Export the AltroCppTargets.cmake file
 install(EXPORT AltroCppTargets
   FILE AltroCppTargets.cmake
-  NAMESPACE altro::
+  NAMESPACE altrocpp::
   DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/AltroCpp
 )
 

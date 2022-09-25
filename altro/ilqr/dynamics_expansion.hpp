@@ -56,8 +56,8 @@ class DynamicsExpansion : public StateControlSized<n, m> {
     ALTRO_UNUSED(u);
     ALTRO_UNUSED(t);
     ALTRO_UNUSED(h);
-    throw std::runtime_error(
-        "Cannot call CalcExpansion on Continuous Dynamics.");
+//    throw std::runtime_error(
+//        "Cannot call CalcExpansion on Continuous Dynamics.");
   }
 
   void SetZero() { jac_.setZero(); }

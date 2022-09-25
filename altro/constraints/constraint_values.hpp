@@ -171,9 +171,10 @@ class ConstraintValues : public Constraint<ConType> {
     dudu = rho * jac_proj_.topRightCorner(output_dim, this->m_).transpose()
            * jac_proj_.topRightCorner(output_dim, this->m_);
 
-    if (full_newton) {
-      throw std::runtime_error("Second-order constraint terms are not yet supported.");
-    }
+    (void)full_newton;
+//    if (full_newton) {
+//      throw std::runtime_error("Second-order constraint terms are not yet supported.");
+//    }
   }
 
   /**

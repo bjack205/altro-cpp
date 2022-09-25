@@ -2,6 +2,7 @@
 
 #include "altro/common/timer.hpp"
 #include "altro/common/profile_entry.hpp"
+#include "altro/common/exceptions.hpp"
 #include "altro/utils/assert.hpp"
 #include "fmt/chrono.h"
 
@@ -105,16 +106,17 @@ Stopwatch Timer::Start(const std::string& name) {
   return Stopwatch();
 }
 
-void Timer::SetOutput(const std::string& filename) {
+ErrorCodes Timer::SetOutput(const std::string& filename) {
   FILE* io = fopen(filename.c_str(), "w");
   if (io == nullptr) {
     std::string errmsg = fmt::format("Error opening profiler file \"{}\". Got errno {}.", filename, errno);
-    throw std::runtime_error(errmsg);
+    ALTRO_THROW(AltroException(errmsg, ErrorCodes::FileError));
   }
   SetOutput(io);
 
   // Set a flag that ensures the file will be closed when the Timer is destroyed
   using_file_ = true;
+  return ErrorCodes::NoError;
 }
 
 Stopwatch::Stopwatch(std::string name, std::shared_ptr<Timer> timer) 
