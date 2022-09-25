@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classaltro_1_1SolverLogger.html" title="Provides a tabular&#45;like logging output." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node2" href="$structaltro_1_1ProfileEntry.html" title="An entry in the profiler summary table." alt="" coords="240,5,375,32"/>
+<area shape="rect" id="node3" href="$classaltro_1_1Timer.html" title="Collects timing information from across many functions specified by the user." alt="" coords="258,56,357,83"/>
 </map>
