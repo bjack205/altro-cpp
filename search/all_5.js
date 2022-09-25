@@ -3,7 +3,7 @@ var searchData=
   ['f_205',['f',['../structaltro_1_1utils_1_1ScalarToVec.html#a89b8bf11e3194aefcdb3a6ba81590ca8',1,'altro::utils::ScalarToVec::f()'],['../structaltro_1_1utils_1_1FiniteDiffGradientFunc.html#a07825ecf1582251079a99feee886f60b',1,'altro::utils::FiniteDiffGradientFunc::f()']]],
   ['feedback_5fgain_5f_206',['feedback_gain_',['../classaltro_1_1ilqr_1_1KnotPointFunctions.html#abef0c1472732ac24037f0f1d1b3316bc',1,'altro::ilqr::KnotPointFunctions']]],
   ['feedforward_5fgain_5f_207',['feedforward_gain_',['../classaltro_1_1ilqr_1_1KnotPointFunctions.html#af483cb084a162c7c287f31aff8351e62',1,'altro::ilqr::KnotPointFunctions']]],
-  ['fileerror_208',['FileError',['../namespacealtro.html#ae491a312a546cf2ba0c53b5985bee982a06344c468073b2b66824779ffa5105cc',1,'altro']]],
+  ['fileerror_208',['FileError',['../namespacealtro.html#a31614be6a410edf1d1d925e28fad092da06344c468073b2b66824779ffa5105cc',1,'altro']]],
   ['finitediffgradient_209',['FiniteDiffGradient',['../namespacealtro_1_1utils.html#ac4e05dfe8f5064a5607556e6884666ae',1,'altro::utils']]],
   ['finitediffgradientfunc_210',['FiniteDiffGradientFunc',['../structaltro_1_1utils_1_1FiniteDiffGradientFunc.html',1,'altro::utils']]],
   ['finitediffhessian_211',['FiniteDiffHessian',['../namespacealtro_1_1utils.html#a9737095ab0047957fbab26f5052edd74',1,'altro::utils']]],

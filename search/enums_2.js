@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_1443',['LogLevel',['../namespacealtro.html#a513f7a8f661a6f0e1352aebc3dc7fa9e',1,'altro']]]
+  ['entrytype_1442',['EntryType',['../classaltro_1_1LogEntry.html#a5c8065e1a3bbba213c32fa283a06615f',1,'altro::LogEntry']]]
 ];

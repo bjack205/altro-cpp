@@ -7,7 +7,7 @@ var searchData=
   ['addsizes_876',['AddSizes',['../namespacealtro.html#a25e9356727d264274bdcad54253d95cd',1,'altro']]],
   ['addtask_877',['AddTask',['../classaltro_1_1ThreadPool.html#a0943683c3d3cff673be149e1dc00ccca',1,'altro::ThreadPool::AddTask(const Task &amp;task)'],['../classaltro_1_1ThreadPool.html#a0943683c3d3cff673be149e1dc00ccca',1,'altro::ThreadPool::AddTask(const Task &amp;task)']]],
   ['alcost_878',['ALCost',['../classaltro_1_1augmented__lagrangian_1_1ALCost.html#a9640395c22d1ef9c5ca45d0b5b0bb261',1,'altro::augmented_lagrangian::ALCost::ALCost(const int state_dim, const int control_dim)'],['../classaltro_1_1augmented__lagrangian_1_1ALCost.html#aea38fe1f7f74d69c918814208611769c',1,'altro::augmented_lagrangian::ALCost::ALCost(const problem::Problem &amp;prob, const int k)']]],
-  ['altroexception_879',['AltroException',['../classaltro_1_1AltroException.html#a7a7c79652d7bc72572a19e7ae7ee9201',1,'altro::AltroException']]],
+  ['altroexception_879',['AltroException',['../classaltro_1_1AltroException.html#a03ecee7f5f83f8a6aa59d9c67bd1c0ad',1,'altro::AltroException']]],
   ['assertionsactive_880',['AssertionsActive',['../namespacealtro_1_1utils.html#a3ddc3ff41b907df9411ca4e45a230efe',1,'altro::utils']]],
   ['assertmsg_881',['AssertMsg',['../namespacealtro_1_1utils.html#a5264cd17054dde7a3b394a061152ee71',1,'altro::utils']]],
   ['auglag_882',['AugLag',['../classaltro_1_1constraints_1_1ConstraintValues.html#ad562bdea1e02ee9d6ccb06b94967a527',1,'altro::constraints::ConstraintValues']]],

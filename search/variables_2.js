@@ -4,7 +4,7 @@ var searchData=
   ['c_5fproj_5f_1178',['c_proj_',['../classaltro_1_1constraints_1_1ConstraintValues.html#a1a47e793d674adaf1b7abe615870f7e3',1,'altro::constraints::ConstraintValues']]],
   ['central_1179',['central',['../structaltro_1_1utils_1_1FiniteDiffGradientFunc.html#aa692846b05d4952fa3eb1c08283714c7',1,'altro::utils::FiniteDiffGradientFunc']]],
   ['check_5fforwardpass_5fbounds_1180',['check_forwardpass_bounds',['../structaltro_1_1SolverOptions.html#a5f2aea2d9cce72f3ca6ead91e4935e9e',1,'altro::SolverOptions']]],
-  ['code_5f_1181',['code_',['../classaltro_1_1AltroException.html#a0a8610c24c57aaa3a57793512e598978',1,'altro::AltroException']]],
+  ['code_5f_1181',['code_',['../classaltro_1_1AltroException.html#a685b19c5029a8786066cc39a35c70919',1,'altro::AltroException']]],
   ['color_5f_1182',['color_',['../classaltro_1_1LogEntry.html#a04fca7f6b15bd97bf994327d3f17c055',1,'altro::LogEntry']]],
   ['color_5fdefault_5f_1183',['color_default_',['../classaltro_1_1LogEntry.html#a4b4db2a4fdb5f1629427781c5b859bc0',1,'altro::LogEntry']]],
   ['color_5flower_5f_1184',['color_lower_',['../classaltro_1_1LogEntry.html#a7be776bf9b26cc2531aa80838bb30b29',1,'altro::LogEntry']]],

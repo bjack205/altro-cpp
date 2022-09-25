@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['backwardpassregularization_1440',['BackwardPassRegularization',['../namespacealtro_1_1ilqr.html#ae256780fc743aed3add7083b89464d64',1,'altro::ilqr']]]
+  ['altroerrorcodes_1440',['AltroErrorCodes',['../namespacealtro.html#a31614be6a410edf1d1d925e28fad092d',1,'altro']]]
 ];
