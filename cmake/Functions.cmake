@@ -15,7 +15,7 @@ function(export_library lib_name export_name)
   # installed include directory automatically added to their include path.
   target_include_directories(${lib_name}
                            INTERFACE
-                           "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>"
+                           "$<BUILD_INTERFACE:${AltroCpp_SOURCE_DIR}>"
                            "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>"
   )
 

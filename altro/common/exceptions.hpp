@@ -16,7 +16,7 @@
 
 namespace altro {
 
-enum class ErrorCodes {
+enum class AltroErrorCodes {
   NoError,
   DimensionUnknown,
   BadIndex,
@@ -29,12 +29,12 @@ enum class ErrorCodes {
 
 class AltroException : public std::runtime_error {
  public:
-  AltroException(std::string msg, ErrorCodes code) : std::runtime_error(msg.c_str()), code_(code) {}
-  virtual ErrorCodes Errno() { return code_; }
+  AltroException(std::string msg, AltroErrorCodes code) : std::runtime_error(msg.c_str()), code_(code) {}
+  virtual AltroErrorCodes Errno() { return code_; }
   virtual ~AltroException(){};
 
  private:
-  ErrorCodes code_;
+  AltroErrorCodes code_;
 };
 
 }  // namespace altro

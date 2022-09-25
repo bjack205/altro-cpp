@@ -106,17 +106,17 @@ Stopwatch Timer::Start(const std::string& name) {
   return Stopwatch();
 }
 
-ErrorCodes Timer::SetOutput(const std::string& filename) {
+AltroErrorCodes Timer::SetOutput(const std::string& filename) {
   FILE* io = fopen(filename.c_str(), "w");
   if (io == nullptr) {
     std::string errmsg = fmt::format("Error opening profiler file \"{}\". Got errno {}.", filename, errno);
-    ALTRO_THROW(AltroException(errmsg, ErrorCodes::FileError));
+    ALTRO_THROW(AltroException(errmsg, AltroErrorCodes::FileError));
   }
   SetOutput(io);
 
   // Set a flag that ensures the file will be closed when the Timer is destroyed
   using_file_ = true;
-  return ErrorCodes::NoError;
+  return AltroErrorCodes::NoError;
 }
 
 Stopwatch::Stopwatch(std::string name, std::shared_ptr<Timer> timer) 

@@ -162,13 +162,14 @@ endif()
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Make all include paths relative to the root folder
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${AltroCpp_SOURCE_DIR})
 
 # This adds the -fPIC option for all build targets.
 # Recommended for integration into other repos.
 set(CMAKE_POSITION_INDEPENDENT_CODE ${ALTRO_SET_POSITION_INDEPENDENT})
 
 add_subdirectory(altro)
+
 if (ALTRO_BUILD_EXAMPLES)
   add_subdirectory(examples)
 endif()
